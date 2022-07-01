@@ -98,7 +98,7 @@ mv dsc /usr/bin
 ```
 In /etc/docspell-joex/docspell-joex.conf und
    /etc/docspell-restserver/docspell-server.conf
-folgende Äderunge machen:
+folgende Änderungen machen:
 
   full-text-search {
     # The full-text search feature can be disabled. It requires an
@@ -108,7 +108,6 @@ folgende Äderunge machen:
     # Currently the SOLR search platform and PostgreSQL is supported.
     enabled = true
 
-
 sowie
 
 jdbc {
@@ -116,8 +115,7 @@ jdbc {
    user = "docspell"
    password = "DocSpell123"
  }
-Dieser Eintrag kommt i jeder Kofigurtoon 2 malvor,einmal uterFrotend und einmal unter Backed. Es müssen beide Einträge editiert werden!
-
+Dieser Eintrag kommt in jeder Konfiguration 2 mal vor, einmal unter Frontend und einmal unter Backend. Es müssen beide Einträge editiert werden!
 
 vi /etc/docspell-joex/docspell-joex.conf 
 
