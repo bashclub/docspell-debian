@@ -96,10 +96,10 @@ mv dsc /usr/bin
 ```
 
 ```
-vi /etc/docspell-joex/docspell-joex.conf
+In /etc/docspell-joex/docspell-joex.conf und
+   /etc/docspell-restserver/docspell-server.conf
+folgende Äderunge machen:
 
-vi /etc/docspell-restserver/docspell-server.conf
-^
   full-text-search {
     # The full-text search feature can be disabled. It requires an
     # additional index server which needs additional memory and disk
@@ -109,17 +109,16 @@ vi /etc/docspell-restserver/docspell-server.conf
     enabled = true
 
 
-
-in beiden .conf
+sowie
 
 jdbc {
    url = "jdbc:postgresql://localhost:5432/docspelldb"
    user = "docspell"
    password = "DocSpell123"
  }
-```
+Dieser Eintrag kommt i jeder Kofigurtoon 2 malvor,einmal uterFrotend und einmal unter Backed. Es müssen beide Einträge editiert werden!
 
-```
+
 vi /etc/docspell-joex/docspell-joex.conf 
 
     pool-size = 8
